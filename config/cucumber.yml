@@ -1,0 +1,4 @@
+default: --format progress --format html --out=features_report.html  
+ie: BROWSER=IE
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome

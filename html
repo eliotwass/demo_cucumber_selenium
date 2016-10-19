@@ -1,0 +1,45 @@
+Feature: Create an account on Salesforce.com
+
+  Scenario: Create a new account[90m                                               # features/features/salesforce.feature:3[0m
+    [32mGiven I am on the salesforce login page[90m                                    # features/step_definitions/salesforce_steps.rb:8[0m[0m
+      [36mnow testing in the following browser: phantomjs[0m
+      [36mYRKXF is your randomly generated test identifier for the second account[0m
+      [36m#<struct Selenium::WebDriver::Dimension width=1280, height=800>[0m
+      [36mnavigating to salesforce login page[0m
+    [32mWhen I enter my credentials[90m                                                # features/step_definitions/salesforce_steps.rb:18[0m[0m
+      [36mentering credentials and clicking login button[0m
+    [32mThen I expect to see the dashboard[90m                                         # features/step_definitions/salesforce_steps.rb:27[0m[0m
+      [36mverifying SPR Salesforce landing page has loaded[0m
+      [36mchecking for element successful[0m
+    [32mThen I will access the create account page[90m                                 # features/step_definitions/salesforce_steps.rb:37[0m[0m
+      [36mloading account tab[0m
+      [36mVerifying we are on the correct page[0m
+    [32mGiven I will enter required information and click save[90m                     # features/step_definitions/salesforce_steps.rb:50[0m[0m
+      [36mentering some required and optional information, data-driven from an excel document[0m
+      [36mclicking the save button[0m
+    [32mThen my first account is validated and a screenshot is captured[90m            # features/step_definitions/salesforce_steps.rb:83[0m[0m
+      [36mVerifying information submitted successfully[0m
+      [36mcapturing a timestamped screenshot[0m
+    [32mThen I will delete the account[90m                                             # features/step_definitions/salesforce_steps.rb:100[0m[0m
+      [36maccount deleted[0m
+    [32mGiven I will return to the create account page[90m                             # features/step_definitions/salesforce_steps.rb:112[0m[0m
+      [36mreloading loading account tab[0m
+      [36mVerifying we are on the correct page[0m
+    [32mWhen I will enter required information for a second account and click save[90m # features/step_definitions/salesforce_steps.rb:130[0m[0m
+      [36mentering some required and optional information, including a unique Account Name[0m
+    [32mThen my second account is validated and a screenshot is captured[90m           # features/step_definitions/salesforce_steps.rb:162[0m[0m
+      [36mVerifying information submitted successfully[0m
+      [36mcapturing a timestamped screenshot[0m
+    [32mWhen I will delete the second account[90m                                      # features/step_definitions/salesforce_steps.rb:179[0m[0m
+      [36maccount deleted[0m
+    [32mAnd I reload the account page[90m                                              # features/step_definitions/salesforce_steps.rb:191[0m[0m
+      [36mloading account tab[0m
+      [36mchecking for element successful[0m
+      [36mchecking for element successful[0m
+    [32mThen neither accounts will display[90m                                         # features/step_definitions/salesforce_steps.rb:208[0m[0m
+      [36mfirst created account not displayed[0m
+      [36msecond created account not displayed[0m
+
+1 scenario ([32m1 passed[0m)
+13 steps ([32m13 passed[0m)
+0m29.528s

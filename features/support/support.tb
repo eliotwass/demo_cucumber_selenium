@@ -1,0 +1,4 @@
+require 'capybara/cucumber'
+require 'capybara-screenshot/cucumber'
+ 
+Capybara.default_driver = :selenium 

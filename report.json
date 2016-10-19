@@ -1,0 +1,5 @@
+ @RunWith(Cucumber.class)  
+ @Cucumber.Options(glue = {"classpath:com/rd/uat"}, strict = true, format = {  
+     "pretty", "html:target/cukes", "json:target/cukes/report.json", "junit:target/cukes/junit.xml"})  
+ public class RunCukes {  
+ }

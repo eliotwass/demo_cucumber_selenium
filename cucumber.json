@@ -1,0 +1,246 @@
+[
+  {
+    "uri": "features/features/demoQATest.feature",
+    "id": "register-and-login-to-demoqa.com",
+    "keyword": "Feature",
+    "name": "Register and login to demoqa.com",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "register-and-login-to-demoqa.com;register-a-new-account",
+        "keyword": "Scenario",
+        "name": "Register a new account",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39840
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17050
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the demoqa homepage",
+            "line": 4,
+            "output": [
+              "navigating to http://demoqa.com",
+              "capturing initial screenshot"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3097934079
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I will click the registration button",
+            "line": 5,
+            "output": [
+              "clicking the registration button on the menu bar"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 309095760
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I expect to see the registration form",
+            "line": 6,
+            "output": [
+              "verifying registration page element has loaded"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1301758610
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will fill in the form and click Submit",
+            "line": 7,
+            "output": [
+              "entering required form data",
+              "taking a pause before submit"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6377115983
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "my account is created",
+            "line": 8,
+            "output": [
+              "verifying successful registration messaging",
+              "capturing final screenshot"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371893337
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34326
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-and-login-to-demoqa.com;attempt-registration-with-mismatched-password",
+        "keyword": "Scenario",
+        "name": "Attempt registration with mismatched password",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40394
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15253
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the demoqa homepage",
+            "line": 11,
+            "output": [
+              "navigating to http://demoqa.com",
+              "capturing initial screenshot"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1878768351
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I will click the registration button",
+            "line": 12,
+            "output": [
+              "clicking the registration button on the menu bar"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193524816
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I expect to see the registration form",
+            "line": 13,
+            "output": [
+              "verifying registration page element has loaded"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1258152111
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter mismatching passwords",
+            "line": 14,
+            "output": [
+              "entering valid & required form data",
+              "Entering invalid password confirm"
+            ],
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3057298503
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I expect an error message",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/demoQATest.rb:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2341089672
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.9.0/lib/capybara/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29638
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
